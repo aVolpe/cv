@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesClass{friggeri-cv}[2012/04/30 CV class]
@@ -53,14 +53,14 @@
 
 % \RequirePackage[quiet]{fontspec}
 % \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-% 
+%
 % \newfontfamily\bodyfont[]{Helvetica Neue}
 % \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
 % \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
-% 
+%
 % \defaultfontfeatures{Mapping=tex-text}
 % \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-% 
+%
 % \setmathfont{XITS Math}
 
 %%% modified by Karol Kozioł for ShareLaTex use
@@ -179,18 +179,68 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
+  %\end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
-  }\\}
+  }\\
+  \end{tabular*}
+  }
+\newcommand{\experiencia}[5]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  #1&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    \hfill%
+    \separacion{}
+    {\addfontfeature{Color=pblue} Proyectos}\\%
+    #4\vspace{\parsep}%
+    {\addfontfeature{Color=pblue} Herramientas}\\%
+    #5\vspace{\parsep}%
+  }\\
+  \end{tabular*}
+  }
+
+\newcommand{\separacion}{
+    \textbf{}\\ %TODO poner un smallskip
+}
+
+% Proyecot Full, para ser utilizado como un \entry
+\newcommand{\proyectof}[5]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
+    {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    \hfill%
+    \footnotesize{
+    #4\vspace{\parsep}\\%
+    \textbf{}\hfill{\addfontfeature{Color=pblue} Herramientas}\\%
+    #5\vspace{\parsep}%
+    }
+  }\\
+  \end{tabular*}
+  }
+
+% Proyecto no full, para ser utilizado dentro de un \entry
+\newcommand{\proyecto}[5]{%
+    \separacion{}
+    \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
+    %{\footnotesize #3}
+    \separacion{}
+    {\footnotesize #4} \\
+    \textbf{}\hfill{}{\footnotesize\addfontfeature{Color=pblue} Herramientas}\\%
+    {\footnotesize #5}\vspace{\parsep}%
+}
 
 
 %%%%%%%%%%%%%%

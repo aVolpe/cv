@@ -12,3 +12,4 @@ Curriculum Vitae
 * Cambiar gráfico de capacidades personales.
 * Traducir al Ingles
 * Agregar link a linkedin
+* Agregar cursos/conferencias/etc
