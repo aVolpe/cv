@@ -223,10 +223,42 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     \hfill%
     \footnotesize{
-    #4\vspace{\parsep}\\%
-    \textbf{}\hfill{\addfontfeature{Color=pblue} Herramientas}\\%
-    #5\vspace{\parsep}%
+        #4\vspace{\parsep}\\%
+        \textbf{\addfontfeature{Color=pblue} Herramientas}%
+        #5\vspace{\parsep}%
     }
+  }\\
+  \end{tabular*}
+  }
+
+  % academ, para ser utilizado como un \entry
+\newcommand{\academ}[4]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
+    {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    \hfill%
+    \footnotesize{
+    #4\vspace{\parsep}\\%
+    }
+  }\\
+  \end{tabular*}
+  }
+
+  % clase, para ser utilizado como un \entry
+  \newcommand{\clase}[6]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
+    {%
+        \parbox[t]{2cm}{#1}}&\parbox[t]{12cm}{%
+        \textbf{#3}%
+        \hfill%
+        {\footnotesize{\addfontfeature{Color=pblue}{#5}}} \\%
+        \scriptsize{#4}
+        \hfill%
+        {\footnotesize{\addfontfeature{Color=pblue}{#2}}} \\%
+        {#6}
+        \separacion{}
   }\\
   \end{tabular*}
   }
@@ -235,7 +267,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcommand{\proyecto}[5]{%
     \separacion{}
     \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
-    %{\footnotesize #3}
     \separacion{}
     {\footnotesize #4} \\
     \textbf{}\hfill{}{\footnotesize\addfontfeature{Color=pblue} Herramientas}\\%
