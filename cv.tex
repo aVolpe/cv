@@ -2,6 +2,7 @@
 \documentclass[]{friggeri-cv}
 \usepackage{afterpage}
 \usepackage{hyperref}
+\usepackage{csquotes}
 \usepackage[spanish]{babel}
 \usepackage{color}
 \usepackage{xcolor}
@@ -22,12 +23,15 @@
 {Ingeniero en Informática}
 
 % Fake text to add separator
-\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+\fcolorbox{gray}{gray}{\parbox{\dimexpr\textwidth-40\fboxsep-2\fboxrule}{%
 .....
 }}
 
 % In the aside, each new line forces a line break
 \begin{aside}
+	\section{}~
+    \section{}~
+    \section{}~
     \section{Celular}
         (0972) 105 - 788
         ~
@@ -38,7 +42,7 @@
         \href{https://github.com/avolpe}{github.com/avolpe}
         ~
     \section{Blog}
-        \href{https://avolpe.github.io}{avolpe.github}
+        \href{https://avolpe.github.io}{avolpe.github.io}
         ~
 \section{Idiomas}
 \textbf{Español}\includegraphics[scale=0.40]{img/5stars.png}
@@ -143,8 +147,6 @@ investigación de tecnológicas. \\}
 
 \end{entrylist}
 
-
-\newpage
 \section{Experiencia Independiente}
 \proyectof
     {2015}
@@ -210,14 +212,14 @@ investigación de tecnológicas. \\}
     {}
 \end{entrylist}
 
-
-
+\begin{absolutelynopagebreak}
 \section{Referencias}
 \begin{entrylist}
     \entry{M.Sc.}{Martin Abente}{}{}
     \entry{M.Sc.}{Guillermo Gonzalez}{}{}
     \entry{M.Sc.}{Maria Elena Garcia}{}{}
 \end{entrylist}
+\end{absolutelynopagebreak}
 
 \begin{flushleft}
     \emph{\today{}}
@@ -225,6 +227,7 @@ investigación de tecnológicas. \\}
 \begin{flushright}
     \emph{Arturo Volpe}
 \end{flushright}
+
 
 
 \end{document}

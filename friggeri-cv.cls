@@ -41,8 +41,8 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{fillheader}{gray}
+  \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
@@ -109,7 +109,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{pblue}%
+      \fontsize{14pt}{24pt}\color{white}%
       \bodyfont #3%
     };
   \end{tikzpicture}
@@ -172,6 +172,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \pagestyle{empty}
 
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
 
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
@@ -300,7 +305,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Bibliography %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
+\RequirePackage[style=verbose, maxnames=99, sorting=ydnt, backend=biber]{biblatex}
 
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[inproceedings]{title}{#1\par}
