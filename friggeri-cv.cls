@@ -267,9 +267,9 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcommand{\proyecto}[5]{%
     \separacion{}
     \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
-    \separacion{}
+    %\separacion{}
     {\footnotesize #4} \\
-    \textbf{}\hfill{}{\footnotesize\addfontfeature{Color=pblue} Herramientas}\\%
+    {\textbf{}\small\addfontfeature{Color=pblue} Herramientas}\\%
     {\footnotesize #5}\vspace{\parsep}%
 }
 
