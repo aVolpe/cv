@@ -1,0 +1,197 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{%
+    pdftitle={Curriculum Vitae},
+    pdfauthor={Arturo Volpe},
+    pdfsubject={Resumen de vida Profesional},
+    pdfkeywords={},
+    colorlinks=false,       % no link border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Arturo}{Volpe}
+{Ingeniero en Informática}
+
+% Fake text to add separator
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \section{Celular}
+        (0972) 105 - 788
+        ~
+    \section{Correo}
+        \href{mailto:arturovolpe@gmail.com}{arturovolpe@gmail.com}
+        ~
+    \section{Repositorios}
+        \href{https://github.com/avolpe}{github.com/avolpe}
+        ~
+\section{Idiomas}
+\textbf{Español}\includegraphics[scale=0.40]{img/5stars.png}
+\textbf{Ingles}\includegraphics[scale=0.40]{img/3stars.png}
+\end{aside}
+
+\section{Experiencia}
+\begin{entrylist}
+\entry
+    {2015-}
+    {Ingeniero de Software}
+    {CDS}
+    {\proyecto
+        {\href{http://bacheando.com/}{Bacheando}}
+        {2015}
+        {Programador}
+        {Proyecto de geolocalización de baches, perdidas, hundimientos y
+            cortes de la municipalidad de Asunción.
+            Posee un componente web, así como una aplicación móvil para
+            dispositivos Android.}
+        {\begin{itemize}
+            \item \textbf{JavaScript}: angular, d3, bootstrap, leaflet.
+            \item \textbf{Java}: JavaEE, Jax-Rs, Hibernate, AndroidSDK.
+        \end{itemize}} }
+
+\entry
+    {2012 - 2015}
+    {Arquitecto de Software}
+    {Facultad Politécnica}
+    {Ingrese como programador junior, desempeñando cargos como la creación de
+        aplicaciones base para el desarrollo, tareas de diseño de interfaces
+        como de lógica de negocio, integración de componentes, e investigación
+        de tecnológicas.
+
+        Proyectos:
+        \begin{itemize}
+            \item Sistema Integral de Gestión Hospitalaria (Hospital de
+                Clínicas)
+            \item Sistema de Gestión Convergente de Nueva Generación (Copaco)
+        \end{itemize}}
+\entry
+    {2011 - 2012}
+    {Programador Junior}
+    {Konecta S.A.}
+    {Como programador junior, mis responsabilidades incluían el diseño y
+        desarrollo de software para dispositivos móviles, y la creación de
+        servicios webs, tanto servicios que interactuaban directamente con
+        aplicaciones móviles, como otros que interactuaban con aplicaciones webs
+        \\}
+\entry
+    {2011 - 2011}
+    {Programador Junior}
+    {Global S.A.}
+    {Como programador junior mis funciones iban desde correcciones y pruebas de
+        aplicaciones en fase final de desarrollo, hasta realizar funciones
+        relacionadas con el mantenimiento de la base de datos y su correcto
+        funcionamiento. Además de administración de servidores. \\}
+\entry
+    {2010 - 2011}
+    {Programador}
+    {Bunker Games}
+    {Como programador principal y único, mis responsabilidades iban desde la
+        correcto funcionamiento del videojuego, la integración del entorno
+        gráfico, programación de la inteligencia artificial, cálculo de
+        recorridos, optimización, etc. \\}
+\entry
+    {2005 - 2008}
+    {Técnico de computadoras}
+    {Cyber Bunker}
+    {Como técnico mi responsabilidad era el correcto funcionamiento de las
+        maquinas pertenecientes al cyber, así como la configuración de la red.
+        \\}
+\entry
+    {2006 - 2007}
+    {Pasante}
+    {Colegio de San José}
+    {Ingrese como programador junior, desempeñando cargos como la
+creación de aplicaciones base para el desarrollo, tareas de diseño de
+interfaces como de lógica de negocio, integración de componentes, e
+investigación de tecnológicas. \\}
+
+\end{entrylist}
+
+
+\newpage
+\section{Experiencia Independiente}
+\proyectof
+    {2015}
+    {\href{https://apps.facebook.com/pechugon_pepe}{PepeChugon Game}}
+    {\href{http://www.animata.com.py/}{Animata}}
+    {Consiste en un juego multiplataforma~(Android, Facebook Canvas y Windows)
+        y un servidor donde se almacena la información y el rendimiento de los
+        usuarios. El juego fue desarrollado para la campaña publicitaria del día
+        del niño.}
+    {\begin{itemize}
+            \item \textbf{Juego}: Unity3D, Facebook Unity Plugin.
+            \item \textbf{Backend}: Java EE, OpenShift, PostgreSQL, Facebook
+                JavaScript API, Primefaces, Primefaces Mobile.
+        \end{itemize}}
+
+    \section{Experiencia académica}
+\clase
+    {2016}
+    {Curso de Verano}
+    {\href{http://www.pol.una.py/cursosverano/index.php?option=com_content&view=article&layout=edit&id=91}{Innovación
+            social y transparencia mediante datos abiertos}} 
+    {Auxiliar}
+    {FP-UNA}
+    {El curso busca crear una comunidad de personas que puedan aportar ideas
+        innovativas con alto impacto social y que fomenten la transparencia en
+        el uso de los recursos públicos. }
+\clase
+    {2016-}
+    {Licenciatura en ciencias Informáticas}
+    {Algoritmos I} 
+    {Auxiliar}
+    {FP-UNA}
+    {}
+
+\clase
+    {2016-}
+    {Ingeniería en informática}
+    {Gestión de Centro de Cómputos} 
+    {Auxiliar}
+    {FP-UNA}
+    {}
+
+\section{Educación}
+\begin{entrylist}
+  \entry
+    {2008 - 2015}
+    {Ingeniero en Informática}
+    {Facultad Politécnica - Universidad Nacional de Asunción}
+    {}
+  \entry
+    {2005 - 2007}
+    {Bachiller Técnico en Informática}
+    {Colegio de San José}
+    {}
+\end{entrylist}
+
+
+
+\section{Referencias}
+\begin{entrylist}
+    \entry{M.Sc.}{Martin Abente}{}{}
+    \entry{M.Sc.}{Guillermo Gonzalez}{}{}
+    \entry{M.Sc.}{Maria Elena Garcia}{}{}
+\end{entrylist}
+
+\begin{flushleft}
+    \emph{\today{}}
+\end{flushleft}
+\begin{flushright}
+    \emph{Arturo Volpe}
+\end{flushright}
+
+
+\end{document}
