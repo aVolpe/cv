@@ -195,7 +195,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
-    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #5}
+    \ifblank{#5}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #5}
+    
   }\\
   \end{tabular*}
   }
@@ -259,8 +260,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         \textbf{\addfontfeature{Color=pblue} Herramientas}%
         #5\vspace{\parsep}%
     }
-    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
-  }\\
+    {\ifblank{#6}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
+  }}\\
   \end{tabular*}
   }
 
@@ -288,8 +289,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
     {\footnotesize #4} \\
     \separacion{}
-    {\textbf{}\small\addfontfeature{Color=pblue} Herramientas}
-    {\small\footnotesize #5}%\\
+    \ifblank{#5}{}{{\textbf{}\small\addfontfeature{Color=pblue} Herramientas} {\small\footnotesize #5}}
     {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
     
 }
