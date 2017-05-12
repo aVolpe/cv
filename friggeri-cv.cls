@@ -117,7 +117,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \vspace{-2\parskip}
 }
 
-
 %%%%%%%%%%%%%
 % Structure %
 %%%%%%%%%%%%%
@@ -189,7 +188,19 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   %\end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[4]{%
+\newcommand{\entry}[5]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  #1&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    #4\vspace{\parsep}%
+    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #5}
+  }\\
+  \end{tabular*}
+  }
+
+\newcommand{\educacion}[4]{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
@@ -199,6 +210,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   }\\
   \end{tabular*}
   }
+
+  
 \newcommand{\experiencia}[5]{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
   #1&\parbox[t]{11.8cm}{%
@@ -219,24 +232,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{}\\ %TODO poner un smallskip
 }
 
-% Proyecot Full, para ser utilizado como un \entry
-\newcommand{\proyectof}[5]{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
-    {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
-    \hfill%
-    \footnotesize{
-        #4\vspace{\parsep}\\%
-        \textbf{\addfontfeature{Color=pblue} Herramientas}%
-        #5\vspace{\parsep}%
-    }
-  }\\
-  \end{tabular*}
-  }
-
-  % academ, para ser utilizado como un \entry
+% academ, para ser utilizado como un \entry
 \newcommand{\academ}[4]{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
     {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
@@ -250,6 +246,24 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   }\\
   \end{tabular*}
   }
+  
+  \newcommand{\proyectof}[6]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
+    {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    \hfill%
+    \footnotesize{
+        #4\vspace{\parsep}\\%
+        \textbf{\addfontfeature{Color=pblue} Herramientas}%
+        #5\vspace{\parsep}%
+    }
+    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
+  }\\
+  \end{tabular*}
+  }
+
 
   % clase, para ser utilizado como un \entry
   \newcommand{\clase}[6]{%
@@ -269,13 +283,15 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   }
 
 % Proyecto no full, para ser utilizado dentro de un \entry
-\newcommand{\proyecto}[5]{%
+\newcommand{\proyecto}[6]{%
     \separacion{}
     \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
     {\footnotesize #4} \\
     \separacion{}
     {\textbf{}\small\addfontfeature{Color=pblue} Herramientas}
-    {\small\footnotesize #5}%
+    {\small\footnotesize #5}%\\
+    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
+    
 }
 
 
