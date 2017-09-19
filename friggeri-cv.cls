@@ -195,7 +195,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
-    \ifblank{#5}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #5}
+    % \ifblank{#5}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #5}
     
   }\\
   \end{tabular*}
@@ -212,22 +212,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{tabular*}
   }
 
-  
-\newcommand{\experiencia}[5]{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
-    \hfill%
-    \separacion{}
-    {\addfontfeature{Color=pblue} Proyectos}\\%
-    #4\vspace{\parsep}%
-    {\addfontfeature{Color=pblue} Herramientas}\\%
-    #5\vspace{\parsep}%
-  }\\
-  \end{tabular*}
-  }
 
 \newcommand{\separacion}{
     \textbf{}\\ %TODO poner un smallskip
@@ -248,7 +232,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{tabular*}
   }
   
-  \newcommand{\proyectof}[6]{%
+\newcommand{\proyectof}[6]{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
     {\parbox[t]{2cm}{#1}}&\parbox[t]{11.8cm}{%
     \textbf{#2}%
@@ -260,8 +244,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         \textbf{\addfontfeature{Color=pblue} Herramientas}%
         #5\vspace{\parsep}%
     }
-    {\ifblank{#6}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
-  }}\\
+    %{\ifblank{#6}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}}
+  }\\
   \end{tabular*}
   }
 
@@ -286,11 +270,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Proyecto no full, para ser utilizado dentro de un \entry
 \newcommand{\proyecto}[6]{%
     \separacion{}
-    \textbf{#1}\hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
+    {\textbf{\addfontfeature{Color=pblue}#1}}%
+    \hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
     {\footnotesize #4} \\
     \separacion{}
-    \ifblank{#5}{}{{\textbf{}\small\addfontfeature{Color=pblue} Herramientas} {\small\footnotesize #5}}
-    {\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
+    \ifblank{#5}{}{{\textbf{}\small\addfontfeature{Color=black} Herramientas} {\small\footnotesize #5}}
+    %{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
     
 }
 
