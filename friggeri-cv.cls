@@ -191,7 +191,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcommand{\entry}[5]{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
   #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
+    \textbf{\addfontfeature{Color=pblue}\Large #2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
@@ -241,7 +241,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \hfill%
     \footnotesize{
         #4\vspace{\parsep}\\%
-        \textbf{\addfontfeature{Color=pblue} Herramientas}%
+        \textbf{\addfontfeature{Color=pblue}}%
         #5\vspace{\parsep}%
     }
     %{\ifblank{#6}{}{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}}
@@ -270,11 +270,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Proyecto no full, para ser utilizado dentro de un \entry
 \newcommand{\proyecto}[6]{%
     \separacion{}
-    {\textbf{\addfontfeature{Color=pblue}#1}}%
-    \hfill{\footnotesize\addfontfeature{Color=pblue} #2}\\%
-    {\footnotesize #4} \\
-    \separacion{}
-    \ifblank{#5}{}{{\textbf{}\small\addfontfeature{Color=black} Herramientas} {\small\footnotesize #5}}
+    {\textbf{\large #1}}%
+    \hfill{\footnotesize\addfontfeature{Color=pblue} #4}\\%
+    {\footnotesize{#2}} \\
+    {\small{\textbf{#3}}} \\
+    \ifblank{#5}{}{{\small\footnotesize #5}}
     %{\small Horas dedicadas}\hfill{\footnotesize\addfontfeature{Color=header} #6}
     
 }

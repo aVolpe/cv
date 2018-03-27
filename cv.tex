@@ -19,7 +19,7 @@
 \definecolor{pblue}{HTML}{0395DE}
 
 \begin{document}
-\header{Arturo}{Volpe}
+\header{Arturo }{Volpe}
 {Ingeniero en Informática}
 
 % Fake text to add separator
@@ -33,7 +33,7 @@
     \section{}~
     \section{}~
     \section{Celular}
-        (0972) 105 - 788
+        +595972105788
         ~
     \section{Correo}
         \href{mailto:arturo@volpe.com.py}{arturo@volpe.com.py}
@@ -41,113 +41,126 @@
         ~
     \section{Repositorios}
         \href{https://github.com/avolpe}{github.com/avolpe}
+        \href{https://gitlab.com/avolpe}{gitlab.com/avolpe}
         ~
     \section{Blog}
         \href{https://www.volpe.com.py}{volpe.com.py}
         ~
 \section{Idiomas}
 \textbf{Español}\includegraphics[scale=0.40]{img/5stars.png}
-\textbf{Ingles}\includegraphics[scale=0.40]{img/4stars.png}
+\textbf{Ingles}\includegraphics[scale=0.40]{img/3stars.png}
 \end{aside}
 
 
 \section{Experiencia}
 \begin{entrylist}
 \entry
+    {2017 - 2018}
+    {Codium S.A.}
+    {Consultor}
+    {Soporte para implementación de un esquema de integración continua para los proyectos satélite
+    de Bancard, lo que incluye sistemas desarrollados sobre Ruby on Rails, y Spring.
+    
+    Se utilizo Jenkins para el manejo de tareas, geminabox y artifactory para la gestión de librerías,
+    SonarQube para análisis estático y Gitlab como repositorio de código fuente.
+    }
+    {170}
+\entry
     {2015-2017}
     {\href{http://www.cds.com.py}{Centro de Desarrollo Sostenible S.A.}}
-    {Arquitecto de Software}
+    {}
     {\proyecto
         {Financiera el Comercio}
         {2016-2017}
-        {Arquitecto de Software y Gestión de Infraestructura}
         {}
-        {\begin{itemize}
-            \item \textbf{Arquitectura de sistemas}: Sistemas satélite de la Financiera, incluyendo BancaWeb, Aplicaciones móviles, sistemas de gestión internos e integración con sistemas Externos.
-            \item \textbf{Integración continua}: Automatización del proceso de construcción de todos los sistemas externos y creación de estructura para automatización de pruebas de integración.
-            \item \textbf{Producción}: Monitoreo de sistemas.
-        \end{itemize}} 
+        {Arquitecto de Software}
+        {\textbf{Arquitectura y mantenimiento} de sistemas satélite de la Financiera, incluyendo BancaWeb, Aplicaciones móviles, sistemas de gestión internos e integración con sistemas Externos. Encargado de proceso de 
+        \textbf{Integración continua} a través de la automatización del proceso de construcción de todos los sistemas y automatización de pruebas de integración y e2e. En el área de \textbf{producción}, automatización del proceso de monitoreo de sistemas y generación de alertas.
+        } 
         {976}
     
     \proyecto
         {\href{https://www.mytappweb.com}{myTapp}}
         {2016-2017}
-        {Arquitecto, desarrollo back-end y front-end}
-        {Plataforma para gestión de comercios y pagos integrados.}
-        {\begin{itemize}
-            \item \textbf{Móvil}: ionic.
-            \item \textbf{Back-end}: JavaEE, Jax-Rs, PostgreSQL, JPA, EJB.
-            \item \textbf{Infraestructura}: Docker, Nginx, Wildfly, Redis, PostgreSQL, AWS, Jenkins, Sonar.
-        \end{itemize}} 
-        {1920}
+        {Plataforma para gestión de comercios y pedidos con integración a plataformas de pago.}
+        {Arquitecto y full stack}
+        {
+        Desarrollo de aplicación móvil desarrollada con  \textbf{ionic (v1)}, 
+        backend utilizando el stack JavaEE~(jax-rs, JPA, EJB) y una base de datos
+        PostgreSQL.
+        
+		Además implemente un esquema de \textit{continuous delivery} para este proyecto,
+        utilizando \textit{Jenkins, Rancher, Docker, Arquillian, SonarQUBE, AWS y Scaleway}. 
+        
+        En producción se utilizaron  otros sistemas complementarios de código abierto 
+        como son: \textit{PictShare, pictfit} para la gestión de imágenes, redis para una
+        cache de alto rendimiento y nginx como proxy reverso.
+        
+        El sistema en producción funciona sobre AWS (RDS, y instancias EC2 manejadas a 
+        través de un Rancher). Además incluye un sistema de monitoreo del sistema
+        utilizando \textit{Graphite y Dropwizard}.
+        } 
+        {}
         
     \proyecto
         {\href{http://www.cds.com.py/productos/kinematics/}{Kinematic}}
         {2016-2017}
-        {Arquitecto de Software y desarrollo}
-        {Plataforma automatizada de entrenamiento de tiro de balón.}
-        {\begin{itemize}
-            \item \textbf{Core}: python, OpenCV, c++.
-            \item \textbf{Front-end}: python, django, html5.
-        \end{itemize}}
+        {Plataforma automatizada de entrenamiento de tiro de balón}
+        {Arquitecto y full stack}
+        {Consta de dos componentes principales, un \textbf{core} de detección de movimiento de pelotas en movimiento desarrollado en python y c++ utilizando OpenCV. Así mismo, un componente de \textbf{front-end}, el cual se encuentra desarrollado con python utilizando django.}
         {300}
         
     \proyecto
         {\href{https://mawio.net/}{MAWIO}}
         {2016-2017}
-        {Arquitecto de Software y desarrollo}
         {Mapa Web Interactivo de Obras de la Essap}
-        {\begin{itemize}
-            \item \textbf{Front-end}: angular, bootstrap-ui, jQuery datatables.
-            \item \textbf{Back-end}: JavaEE, Jax-Rs, PostgreSQL, JPA, EJB.
-            \item \textbf{Infraestructura}: Docker, Nginx, Wildfly, Redis, PostgreSQL.
-        \end{itemize}}
+        {Arquitecto y full stack}
+        {SPA desarrollada utilizando principalmente en el front-end \textbf{angular, leaflet y jQuery datatables}, en el back-end \textbf{Jaxa EE (jax-rs, JPA y EJB),}, una base de datos \textbf{PostgreSQL con PostGIS}, y manejo del entorno de desarrollo y producción utilizando \textbf{docker, nginx, wildfly 9 y redis}}
         {300}
         
-    \proyecto
-        {\href{http://www.cds.com.py/productos/sistemas-de-gestion/sistema-de-gestion-hospitalaria/}{SGH}}
-        {2015-2017}
-        {Arquitecto y líder de proyecto}
-        {Sistema de Gestión Hospitalaria, que incluye la atención 
-        	al cliente, manejo de personal, inventario, historia clínica, etc.}
-        {\begin{itemize}
-            \item \textbf{Front-end}: angular, bootstrap-ui, jQuery datatables.
-            \item \textbf{Back-end}: JavaEE, Jax-Rs, PostgreSQL, JPA, EJB.
-            \item \textbf{Infraestructura}: Docker, Nginx, Wildfly, Redis, PostgreSQL, CUPS.
-        \end{itemize}}
-        {1920}
+        
       }
       {}
     
   \entry
     {2015-2017}
     {\href{http://www.cds.com.py}{Centro de Desarrollo Sostenible S.A.}}
-    {Arquitecto de Software}
+    {}
     {
+    \proyecto
+        {\href{http://www.cds.com.py/productos/sistemas-de-gestion/sistema-de-gestion-hospitalaria/}{Sistema de Gestión Hospitalaria}}
+        {2015-2017}
+        {Sistema integral para hospitales}
+        {Arquitecto y líder de proyecto}
+        {SPA desarrollada utilizando principalmente en el front-end 
+        \textbf{angular, boostrap-ui y jQuery datatables}, en el back-end 
+        \textbf{Jaxa EE (jax-rs, JPA y EJB)}, una base de datos PostgreSQL, 
+        y manejo del entorno de desarrollo y producción utilizando 
+        \textbf{docker, nginx, wildfly 9 y redis}}
+        {1920}
         
     \proyecto
         {Portal de datos abiertos para el Poder Judicial}
         {2015}
-        {Full stack}
-        {Portal de datos abiertos para el Poder Judicial, incluyendo varias
-        	fuentes de datos.}
-        {\begin{itemize}
-            \item \textbf{Front-end}: angular, bootstrap-ui, jQuery datatables.
-            \item \textbf{Back-end}: Wildfly, Jax-Rs, Microsoft SQL Server, JPA.
-        \end{itemize}}
+        {Portal de datos abiertos que incluye varias fuentes de datos.}
+        {full stack}
+        {Portal de datos abiertos desarrollado como una SPA utilizando 
+        \textbf{angular, boostrap-ui y jQuery datatables}, en el back end 
+        se utilizo el stack estándar de Java EE (jax-rs, JPA, EJB), como base 
+        de datos se utilizo Microsoft SQL Server 2008.}
         {352} 
+        
     \proyecto
         {\href{http://bacheando.com/}{Bacheando}}
         {2015}
-        {Programador}
-        {Proyecto de geolocalización de baches, perdidas, hundimientos y
+        {Proyecto de localización de incidentes urbanos}
+        {full stack}
+        {Permite la geolocalización de baches, perdidas, hundimientos y
             cortes de la municipalidad de Asunción.
-            Posee un componente web, así como una aplicación móvil para
-            dispositivos Android.}
-        {\begin{itemize}
-            \item \textbf{JavaScript}: angular, d3, bootstrap, leaflet.
-            \item \textbf{Java}: Wildfly, Jax-Rs, Hibernate, AndroidSDK.
-        \end{itemize}}
+            Posee un componente web (desarrollado utilizando 
+            \textbf{angular, d3, boostrap y leaflet}), así como una 
+            aplicación móvil para dispositivos Android y un servidor desarrollado 
+            utilizando wildfly y Java EE(jax-rs, JPA).}
         {176} 
         
 	}
@@ -210,8 +223,21 @@ investigación de tecnológicas. \\}
 
 \end{entrylist}
 
-\newpage
-\section{Experiencia Independiente}
+\section{Freelancer}
+\proyectof
+    {2018}
+    {\href{https://www.pemoi.com.py}{Pemoi}}
+    {\href{https://www.pemoi.com.py/}{Yo Dono}}
+    {Plataforma de Crowfounding para campañas políticas.}
+    {Consiste en una aplicación multiplataforma~(Andorid e iOS) desarrollada utilizando
+     Ionic 3, servicios de firebase (social login, realtime database, deep links, functions, 
+     storage, etc), fabric.io (beta, crashlytics, fastlane, etc).
+     
+     Incluye un sistema de pagos digitales utilizando la plataformas de
+     Tigo Money, Bancard S.A. y \href{https://www.pagopar.com.py}{Pagopar}.
+     
+     }
+    {300}
 \proyectof
     {2015}
     {\href{https://apps.facebook.com/pechugon_pepe}{PepeChugon Game}}
@@ -220,11 +246,8 @@ investigación de tecnológicas. \\}
         y un servidor donde se almacena la información y el rendimiento de los
         usuarios. El juego fue desarrollado para la campaña publicitaria del día
         del niño.}
-    {\begin{itemize}
-            \item \textbf{Juego}: Unity3D, Facebook Unity Plugin.
-            \item \textbf{Backend}: Java EE, OpenShift, PostgreSQL, Facebook
-                JavaScript API, Primefaces, Primefaces Mobile.
-        \end{itemize}}
+    {El Juego fue desarrollado utilizando Unity3D y un componente de backend 
+    desarrollado utilizando OpenShift con PostgreSQL.}
     {300}
         
 
