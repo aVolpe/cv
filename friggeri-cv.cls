@@ -255,7 +255,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rl}
     {%
         \parbox[t]{2cm}{#1}}&\parbox[t]{12cm}{%
-        \textbf{#2}%
+        \textbf{#3}%
         \hfill%
         {\footnotesize{\addfontfeature{Color=pblue}{#5}}} \\%
         \scriptsize{#4}
@@ -271,7 +271,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcommand{\proyecto}[6]{%
     \separacion{}
     {\textbf{\large #1}}%
-    \hfill{n4\footnotesize\addfontfeature{Color=pblue} #4}\\%
+    \hfill{\footnotesize\addfontfeature{Color=pblue} #4}\\%
     {\ifblank{#2}{}{\footnotesize{#2}} \\}
     {\ifblank{#3}{}{\small{\textbf{#3} \\}}}
     \ifblank{#5}{}{{\small #5}}
