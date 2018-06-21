@@ -258,7 +258,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         \textbf{#3}%
         \hfill%
         {\footnotesize{\addfontfeature{Color=pblue}{#5}}} \\%
-        \scriptsize{#4}
+        \normalsize{#4}
         \hfill%
         {\footnotesize{\addfontfeature{Color=pblue}{#2}}} \\%
         {#6}
