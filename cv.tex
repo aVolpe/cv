@@ -20,7 +20,7 @@
 
 \begin{document}
 \header{Arturo }{Volpe}
-{Ingeniero en Informática}
+{Arquitecto de Software}
 
 % Fake text to add separator
 \fcolorbox{gray}{gray}{\parbox{\dimexpr\textwidth-40\fboxsep-2\fboxrule}{%
@@ -39,12 +39,12 @@
         \href{mailto:arturo@volpe.com.py}{arturo@volpe.com.py}
         \href{mailto:arturovolpe@gmail.com}{arturovolpe@gmail.com}
         ~
-    \section{Repositorios}
+    \section{Código}
         \href{https://github.com/avolpe}{github.com/avolpe}
         \href{https://gitlab.com/avolpe}{gitlab.com/avolpe}
         ~
     \section{Blog}
-        \href{https://www.volpe.com.py}{volpe.com.py}
+        \href{https://www.volpe.com.py}{www.volpe.com.py}
         ~
 \section{Idiomas}
 \textbf{Español}\includegraphics[scale=0.40]{img/5stars.png}
@@ -52,27 +52,61 @@
 \end{aside}
 
 
-\section{Experiencia}
+\section{Experiencia Profesional}
 \begin{entrylist}
 \entry
-    {2017 - 2018}
-    {Codium S.A.}
+    {2018 - act.}
+    {\href{https://fintech.works}{fintech.works}}
     {}
     { \proyecto
-        {Bancard S.A.}
+        {PRISMA}
+        {2022-2023}
         {}
-        {}
-        {Consultor}
-        {Soporte para implementación de un esquema de integración continua para los proyectos satélite
-    de Bancard, lo que incluye sistemas desarrollados sobre Ruby on Rails, y Spring.  Se utilizó Jenkins 
-    para el manejo de tareas, geminabox y artifactory para la gestión de librerías,
-    SonarQube para análisis estático y Gitlab como repositorio de código fuente.} 
+        {Arquitecto de Software}
+        {
+            PRISMA es una organización que brinda servicios de medios de pago en diversas verticales. 
+            A modo de ejemplo: Adquirencia Visa/Mastercard, red de POS, Emisión y Procesamiento de 
+            medios de pagos con alcance nacional e internacional, prevención de fraudes, etc. 
+
+            Implementación de un sistema de procesamiento multiemisor basado en tecnología jPos y 
+            desplegado en la nube utilizando kuberetes.
+        } 
         {170}
+ 
+    \proyecto
+        {BEPSA}
+        {2020-2022}
+        {}
+        {Arquitecto de Software}
+        {
+            BEPSA es una empresa enfocada en pagos digitales con servicios en diferentes áreas. A modo 
+            de ejemplo: red de POS, red de ATM, procesador Emisor y procesador Adquirente.
+
+            Como arquitecto del proceso de reingenieria del sistema de acquiriencia fuí el encargado
+            de diseñar una plataforma lista para ser desplegada en la nube de alto rendimiento basada
+            en kubernetes y jPos.
+        } 
+        {170}
+
+    \proyecto
+        {Wally}
+        {2018-2020}
+        {}
+        {Arquitecto de Software}
+        {
+            NETEL Paraguay es una EMPE (Entidad de Medio de Pago Electrónico) que opera en Paraguay 
+            a través de la marca Wally, una billetera móvil disponible para dispositivos Android y iOS
+
+            Wally es una billetera electrónica, como arquitecto me encargue de realizar
+            la integración con sistemas de procesamiento de tarjetas, diseñar los esquemas de 
+            despliegue, y del diseño de la arquitectura de la aplicación y middleware.} 
+        {170}
+
     }
-    {}
+    {xxxx}
 \entry
     {2015-2017}
-    {\href{http://www.cds.com.py}{Centro de Desarrollo Sostenible S.A.}}
+    {\href{https://www.cds.com.py}{Centro de Desarrollo Sostenible S.A.}}
     {}
     {\proyecto
         {Financiera el Comercio}
@@ -89,9 +123,9 @@
         {\href{https://www.mytappweb.com}{myTapp}}
         {2016-2017}
         {Plataforma para gestión de comercios y pedidos con integración a plataformas de pago.}
-        {Arquitecto y full stack}
+        {Arquitecto de Software}
         {
-        Desarrollo de aplicación móvil implementada con  \textbf{ionic (v1)}, 
+        Desarrollo de aplicación móvil implementada con  \textbf{ionic}, 
         backend utilizando el stack JavaEE~(jax-rs, JPA, EJB) y una base de datos
         PostgreSQL.  Además, implementé un esquema de \textit{CD} para este proyecto,
         utilizando \textit{Jenkins, Rancher, Docker, Arquillian, SonarQUBE, AWS y Scaleway}.  
@@ -108,11 +142,29 @@
         {\href{http://www.cds.com.py/productos/kinematics/}{Kinematic}}
         {2016-2017}
         {Plataforma automatizada de entrenamiento de tiro de balón}
-        {Arquitecto y full stack}
+        {Arquitecto de Software}
         {Consta de dos componentes principales, un \textbf{core} de detección de movimiento de pelotas en movimiento desarrollado en python y c++ utilizando OpenCV. Así mismo, un componente de \textbf{front-end}, el cual se encuentra desarrollado con python utilizando django.}
         {300}
         
+    \proyecto
+        {\href{http://www.farmacenter.com.py/}{Farmacenter}}
+        {2016-2017}
+        {Plataforma de comercio electronico}
+        {Arquitecto de Software}
+        {
+            Optimización y mejoras en portal de e-commerce de la cadena de farmacias más grande de Paraguay. 
+            Como parte del proyecto me encargue de la optimización de la plataforma desarrollada en 
+            \textbf{PHP} y \textbf{MySQL}.
+        }
+        {300}
         
+    \proyecto
+        {\href{https://mawio.net/}{MAWIO}}
+        {2016-2017}
+        {Mapa Web Interactivo de Obras de la Essap}
+        {Arquitecto y full stack}
+        {SPA desarrollada utilizando principalmente en el front-end \textbf{angular, leaflet y jQuery datatables}, en el back-end \textbf{Jaxa EE (jax-rs, JPA y EJB),}, una base de datos \textbf{PostgreSQL con PostGIS}, y manejo del entorno de desarrollo y producción utilizando \textbf{docker, nginx, wildfly 9 y redis}}
+        {300}
         
       }
       {}
@@ -122,13 +174,6 @@
     {\href{http://www.cds.com.py}{Centro de Desarrollo Sostenible S.A.}}
     {}
     {
-    \proyecto
-        {\href{https://mawio.net/}{MAWIO}}
-        {2016-2017}
-        {Mapa Web Interactivo de Obras de la Essap}
-        {Arquitecto y full stack}
-        {SPA desarrollada utilizando principalmente en el front-end \textbf{angular, leaflet y jQuery datatables}, en el back-end \textbf{Jaxa EE (jax-rs, JPA y EJB),}, una base de datos \textbf{PostgreSQL con PostGIS}, y manejo del entorno de desarrollo y producción utilizando \textbf{docker, nginx, wildfly 9 y redis}}
-        {300}
         
     \proyecto
         {\href{http://www.cds.com.py/productos/sistemas-de-gestion/sistema-de-gestion-hospitalaria/}{Sistema de Gestión Hospitalaria}}
@@ -219,12 +264,30 @@
 
 \section{Freelancer}
 \proyectof
-    {2018}
+    {2022 - act}
+    {\href{https://github.com/InstIDEA/controlciudadano}{Portal Control Ciudadano}}
+    {\href{https://www.controlciudadanopy.org/}{Link}}
+    {Portal de control de gastos públicos}
+    {Portal para exploración Datos Abiertos, desarrollado para
+        realizar un control de los gastos del \textbf{COVID-19} y analizar el 
+        crecimiento patrimonial de funcionarios públicos en base a sus 
+        Declaraciones Juradas de Bienes y Renta.
+
+        La recolección y limpieza de datos se realizo con Apache Airflow,
+        adicionalmente se desarrollo un front end en React y un backend 
+        en nodejs. 
+        
+        Para almacenar los datos se utilizo PostgreSQL y elasticsearch, como CI/CD 
+        se utilizó Github Actions.
+     }
+    {300}
+\proyectof
+    {2018 - 2022}
     {\href{https://www.pemoi.com.py}{Pemoi}}
     {\href{https://www.pemoi.com.py/}{Yo Dono}}
     {Plataforma de Crowfounding para campañas políticas.}
     {Consiste en una aplicación multiplataforma~(Andorid e iOS) desarrollada utilizando
-     Ionic 3, servicios de firebase (social login, realtime database, deep links, functions, 
+     Ionic, servicios de firebase (social login, realtime database, deep links, functions, 
      storage, etc), fabric.io (beta, crashlytics, fastlane, etc).
      
      Incluye un sistema de pagos digitales utilizando la plataformas de
@@ -233,7 +296,7 @@
      }
     {300}
 \proyectof
-    {2018}
+    {2018 - act}
     {\href{http://github.com/avolpe/cotizacion}{Cotizaciones de monedas en el Paraguay}}
     {\href{https://cotizaciones.volpe.com.py}{Link}}
     {Herramienta para encontrar la mejor cotización para varias monedas,
@@ -241,12 +304,12 @@
     {Desarrollado con Vue y Java (SpringBoot), completamente OpenSource}
     {300}
 \proyectof
-    {2017}
+    {2017 - act}
     {\href{http://github.com/avolpe/set-ruc-finder}{Indice de contribuyentes del Paraguay}}
     {\href{https://set.volpe.com.py}{Link}}
     {Herramienta para buscar RUCs válidos en el Paraguay, también provee algoritmos
     para validaciones y acceso a la base completa de contribuyentes del Paraguay}
-    {Desarrollado con React y NodeJS (express), completamente OpenSource}
+    {Desarrollado con React y Rust, completamente OpenSource}
     {300}
 \proyectof
     {2015}
